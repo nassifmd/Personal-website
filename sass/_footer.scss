@@ -1,0 +1,159 @@
+ //footer
+
+
+ .footer {
+    position: relative;
+    background: #2f005e;
+    
+    @include respond(tab-port){
+        height: 70vh;
+
+
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        @include respond(tab-port){
+            margin: 0 50px;
+        }
+
+        .footer-top {
+            margin: 100px;
+            @include respond(tab-port){
+                margin: 50px 0;
+            }
+            
+
+            h4 {
+                font-size: 30px;
+                color: white;
+                font-weight: 10;
+                @include respond(tab-port){
+                    font-size: 20px;
+                    padding-top: 0px;
+                    
+                }
+                
+                
+            }
+
+            ul {
+                margin: 10px 100px 10px 10px;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        font-size: 20px;
+                        display: block;
+                        margin: 20px;
+                        text-decoration: none;
+                        color: $SECONDARY_COLOR;
+                        font-weight: 10;
+                        @include respond(tab-port){
+                            font-size: 18px;
+                            text-align: left;
+                        }
+        
+                    }
+                    
+                }
+                
+
+            }
+            
+        }
+
+        .footer-mid {
+            margin: 150px 600px 0px 10px;
+            @include respond(tab-port){
+                position: absolute;
+                margin: 20px 20px;
+            
+            }
+            // @include respond(tab-land){
+            //     margin: 140px 10px;
+            
+            // }
+            ul {
+               
+                @include respond(tab-port){
+                    margin-top: 200px;
+                }  
+
+                li {
+                    list-style-type: none;
+                    padding: 10px 20px;
+
+                    a {
+                        font-size: 18px;
+                        display: block;
+                        text-decoration: none;
+                        color: $SECONDARY-COLOR;
+                        font-weight: 10;
+        
+                    }
+
+                }
+            }
+            
+        
+        }
+    }
+
+    .hr {
+        border: 1px solid rgb(237, 215, 174);
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        @include respond(tab-port){
+           border: 0.4px solid rgb(180, 86, 214);
+           margin-top: 200px;
+        }
+    }
+
+
+    .footer-buttom {
+        margin-left: 70%;
+        position: relative;
+        padding-bottom: 300px;
+        @include respond(tab-port){
+            display: none;
+        }
+        // @include respond(tab-land){
+        //     margin-left: 57%;
+        // }
+
+        ul {
+            padding-top: 20px;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $SECONDARY-COLOR;
+                    padding: 20px;
+                }
+
+            }
+        }
+        
+
+    }
+    .signature {
+       position: absolute;
+        margin: 20px 0 0 140px;
+        color: $SECONDARY_COLOR;
+        @include respond(tab-port){
+            position:absolute;
+            top: 27em;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+
+}

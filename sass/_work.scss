@@ -1,0 +1,68 @@
+.items{
+    margin: 100px 50px;
+    @include respond(tab-port){
+        margin: 40px;
+    }
+
+    .bighead{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(160, 160, 160);
+        .dim{
+            color: rgb(120, 120, 120);
+            font-size: 40px;
+
+        }
+
+    }
+    .sub-heading{
+        text-align: center;
+        font-size: 20px;
+        line-height: 4;
+        color: rgb(120, 120, 120);
+        font-weight: 100;
+    }
+
+    .portfolio{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 10px;
+
+            .list{
+                background: #fff;
+
+                .icon{
+
+                #svg{
+                    width: 20em;
+                    height: 15em;
+
+                }
+                
+            }
+            .downside{
+                margin: 50px 50px 30px 30px;
+
+                .title{
+                    font-size: 17px;
+                }
+                
+                .link{
+                    color: rgb(80, 80, 205);
+                    line-height: 2;
+                    text-decoration: none;
+
+                }
+            }
+        }
+        
+    }
+
+}

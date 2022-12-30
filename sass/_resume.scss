@@ -1,0 +1,199 @@
+
+.resume{
+    margin: 100px;
+    background: #f0eefa;
+    @include respond(tab-port){
+        margin: 20px;
+
+    }
+
+    .space-border{
+        padding: 70px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        @include respond(tab-port){
+            padding: 50px 30px;
+            grid-template-columns: none;
+        }
+
+        .social-link{
+            position: absolute;
+            right: 160px;
+            display: flex;
+            @include respond(tab-port){
+                float: right;
+                position: inherit;
+            }
+        }
+
+        .social-email{
+            display: none;
+            @include respond(tab-port){
+                float: right;
+                position: inherit;
+            }
+        }
+
+            .cv-left{
+
+                .bold{
+                    text-decoration: none;
+                    line-height: 40px;
+                    border-right: 5px solid $BTN;
+                    &:hover{
+                        border-right: 10px solid $BTN;
+                    }
+                    @include respond(tab-port){
+                        display: none;
+
+                    }
+                }
+            
+
+                .subs{
+                    @include respond(tab-port){
+                        display: grid;
+                        grid-template-columns: auto auto;
+                    }
+                    
+                    .listingx{
+                        line-height: 60px;
+                        color: $PRIMARY-COLOR;
+                        @include respond(tab-port){
+                            font-size: 15px;
+                        }
+
+                    }
+
+                    ul{
+
+                        li{
+                            line-height: 25px;
+                            color: $head;
+                            @include respond(tab-port){
+                                font-size: 13px;
+                            }
+
+                        }
+                    }
+                }
+
+                .navbar_logo{
+                    padding-top: 88em;
+                    @include respond(tab-port){
+                        display: none;
+                    }
+                    
+                }
+            }
+
+            .cv-right{
+                margin: 0 50px 50px 70px;
+                @include respond(tab-port){
+                    margin: 50px 10px;
+                }
+
+                .big-heading{
+
+                    .cv-title{
+                        font-size: 80px;
+                        color: $PRIMARY-COLOR;
+                        margin-bottom: 15px;
+                        @include respond(tab-port){
+                            font-size: 70px;
+                        }
+
+                    }
+                    .cv-sub{
+                        font-size: 25px;
+                        margin-bottom: 60px;
+                        color: rgb(50, 47, 47);
+                        @include respond(tab-port){
+                            color: rgb(73, 69, 69);
+                        }
+                        
+
+                    }
+                    .cv-detail{
+                        @include cvSpace;
+                        margin-right: 150px;
+                        color: rgb(62, 61, 61);
+                        @include respond(tab-port){
+                            padding: 20px 0;
+                            margin-right: 5px;
+                        }
+
+                    }
+                }
+
+                .myexp{
+
+                    .exp-title{
+                        padding-top: 30px;
+                        font-size: 20px;
+                        color: $PRIMARY-COLOR;
+
+                    }
+
+                    .cv-detail{
+                        @include cvSpace;
+                        margin-right: 150px;
+                        color: rgb(62, 61, 61);
+                        @include respond(tab-port){
+                            padding: 20px 0;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .itemize{
+                    margin: 40px 0;
+
+                    .listing{
+                        color: $PRIMARY-COLOR;
+
+                        .dim{
+                            color: $head;
+                        }
+
+                        .move-right{
+                            float: right;
+                            color: $head;
+                            font-size: 15px;
+                            font-weight: 100;
+                            @include respond(tab-port){
+                            }
+                        }
+                    }
+
+                    .lists{
+                        padding-top: 15px;
+                        list-style-type: square;
+                        margin-right: 150px;
+                        line-height: 2;
+                        color: rgb(62, 61, 61);
+                        @include respond(tab-port){
+                            padding-top: 30px;
+                            margin-right: 0;
+                        }
+
+                        .bold{
+                            font-weight: 1000;
+                            text-decoration: none;
+                            border-bottom: 5px solid $SECONDARY_COLOR;
+                            
+                            &:hover{
+                                border-top: 5px solid $SECONDARY_COLOR;
+                            }
+
+                        }
+                        .list{
+                            line-height: 2;
+                        }
+                    }
+                }
+                
+            }
+    
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "nassif",
+  "version": "1.0.0",
+  "description": "My personal website ",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nassifmd/Personal-website.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Nassif Dauda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nassifmd/Personal-website/issues"
+  },
+  "homepage": "https://github.com/nassifmd/Personal-website#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

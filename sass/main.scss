@@ -1,0 +1,26 @@
+
+//abstract
+@import "abstract/variables";
+@import "abstract/mixin";
+@import "sass/breakpoint";
+
+
+//base
+@import "sass/responsive";
+@import "sass/base/animations";
+
+//page
+@import "index";
+@import "navMenubar";
+@import "footer";
+@import "work";
+@import "rack";
+@import "resume";
+
+
+
+
+
+
+
+

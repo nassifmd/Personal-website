@@ -1,0 +1,31 @@
+@mixin button {
+        border: none;
+        background: $PRIMARY_COLOR;
+        padding: 12px 30px;
+        border-radius: 30px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        transition: .5s;
+}
+
+@mixin hover {
+        transform: scale(1.3);
+        cursor: pointer;
+  
+}
+
+@mixin sidebyside {
+        float: left;
+        width: 50%;
+        padding: 0 20px;        
+}
+
+@mixin cvSpace {
+        padding: 20px 100px 20px 0;
+        font-size: 17px;
+        line-height: 30px;
+        
+}
+
+
