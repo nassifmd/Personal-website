@@ -1,16 +1,13 @@
 @extends('layouts.appmain')
 @include('inc.navbar')
 
- <!-- social meta -->
- <meta property="og:url" content="{{('post->metaUrl')}}">
-    <meta property="og:title" content="{{('post->metaTitle')}}">
-    <meta property="og:description" content="{{('post->metaDescription')}}">
-    <meta property="og:image" content="{{('post->metaThumbnail')}}">
-    <meta property="article:author" content="{{('post->metaAuthor')}}">
 
 @section('content')
-<div class="fb-like" data-href="https://nassiff.dev/article_detail?article_id=1&amp;url=article_detail" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4892079728515636"
+     crossorigin="anonymous"></script>
+<!-- Your share button code -->
 <div class="container">
+<div class="fb-like" data-href="https://nassiff.dev/article_detail" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
     <ul>
         @foreach($posts as $post)
             <h1>{{ $post->title }}</h1>
@@ -46,4 +43,5 @@
         @endforeach
     </ul>
 </div>
+
 @endsection

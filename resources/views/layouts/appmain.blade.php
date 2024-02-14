@@ -15,13 +15,12 @@
 
 </body>
 
-         <!-- FOOTER --> 
          <footer class="footer">
             <div class="footer-container">
                 <div class="footer-top">
                     <h4>Say Hello</h4>
                     <ul>
-                        <li><a href="mailto:hello@nassiff.dev">hello@nassiff.dev</a></li>
+                        <li><a href="mailto:hello@nassiff.dev">hello@nassifinnovations.com</a></li>
                         <li><a href="https://api.whatsapp.com/send?phone=233233302007" target="_blank">Chat on WhatsApp</a>
                         </li>
                     </ul>
@@ -45,10 +44,11 @@
                 </ul>
             </div>
         </footer>
-        <!-- FOOTER --> 
 </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://kit.fontawesome.com/d3b6543391.js" crossorigin="anonymous"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=144614331883792&autoLogAppEvents=1" nonce="MxNeirhb"></script>
     <script src="app.js"></script>
     <script>
         const stars = document.querySelectorAll('#sparkling-stars .stars polygon');
