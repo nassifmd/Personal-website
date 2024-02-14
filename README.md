@@ -7,7 +7,7 @@ This is my website portfolio developed from scratch. Designed and code to improv
 ## Built With
 
 - HTML5
-- CSS
+- SASS
 - JavaScript
 - Jquery
 - Laravel
